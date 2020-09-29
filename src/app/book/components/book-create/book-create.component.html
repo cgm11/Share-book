@@ -1,0 +1,24 @@
+<app-flat-icon [icon]="'X'" [pathUrl]="'/'"></app-flat-icon>
+
+<form>
+    <div class="form-group">
+        <label for="inputName">Name</label>
+        <input #inputName type="text" class="form-control" id="inputName">
+    </div>
+    <div class="form-group">
+        <label for="inputAuthor">Author</label>
+        <input #inputAuthor type="text" class="form-control" id="inputAuthor">
+    </div>
+    <div class="form-group">
+        <label for="inputUrl">Url Image</label>
+        <input #inputUrl type="text" class="form-control" id="inputUrl">
+    </div>
+    <div class="form-group">
+        <label for="inputDescription">Description</label>
+        <textarea #inputDescription class="form-control" id="inputDescription" rows="1"></textarea>
+    </div>
+    <button (click)="addNewBook(inputName.value, inputAuthor.value, inputUrl.value, inputDescription.value)"
+     class="btn btn-primary">
+        Crear libro
+    </button>
+</form>

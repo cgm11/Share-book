@@ -1,0 +1,10 @@
+<app-flat-icon [icon]="'+'" [pathUrl]="'/create'"></app-flat-icon>
+
+<div *ngIf='booklist.length' class="card-group">
+    <div *ngFor='let book of booklist' class="card-margin">
+        <app-card [name]='book.name' 
+        [author]='book.author' 
+        [imageUrl]='book.imageUrl'
+        [description]='book.description'></app-card>
+    </div>
+</div>
